@@ -1,0 +1,50 @@
+﻿th
+{
+    background-color: lightcyan;
+}
+
+td
+{
+    vertical-align: top;
+    border-style:solid;
+    border-width:1px;
+    border-color:lightgray;
+    padding:5px;
+}
+
+.message
+{
+    background-color: lightgoldenrodyellow;
+    margin:5px;
+    padding: 10px;
+    float: left;
+}
+
+.searchString
+{
+    float:left;
+    padding: 10px;
+}
+
+.searchString > input
+{
+    height: 25px;
+}
+
+.simulateDelay
+{
+    float:right;
+    margin: 5px;
+    padding: 10px;
+}
+
+.simulateDelay > input
+{
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.hidden
+{
+    display: none;
+}

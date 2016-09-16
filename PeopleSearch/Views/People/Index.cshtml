@@ -1,0 +1,42 @@
+﻿@model IEnumerable<PeopleSearch.Models.Person>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryui")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/Scripts/jquery.unobtrusive-ajax.min.js")
+@Scripts.Render("~/bundles/people")
+
+<form id="searchForm">
+    <div class="searchString">
+        @Html.TextBox("searchString")
+        <button type="submit" id="btnSearch">Search</button>
+    </div>
+    <div id="message" class="message">
+    </div>
+    <div class="simulateDelay">
+        Simulate delay <input type="checkbox" id="simulateDelay" value="delay" />
+    </div>
+</form>
+
+<table class="table">
+    <tr id="resultHeader">
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Interests)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageURL)
+        </th>
+        <th></th>
+    </tr>
+	<tbody id="searchResult">
+    </tbody>
+</table>
